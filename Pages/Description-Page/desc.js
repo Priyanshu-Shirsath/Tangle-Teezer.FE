@@ -183,6 +183,7 @@ async function loadProductDescription() {
 
     image.addEventListener("error", () => {
       image.style.display = "none";
+      image.removeAttribute("src")
       fallbackMsg.style.display = "block";
     });
 
